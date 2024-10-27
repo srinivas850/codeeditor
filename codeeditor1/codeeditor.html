@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js with Monaco Editor</title>
+  <style>
+    #editor-container {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ddd;
+    }
+    #threejs-output {
+      width: 100%;
+      height: 500px;
+      border: 1px solid black;
+      position: relative;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h2>Code Editor</h2>
+  <div id="editor-container"></div>
+  <button onclick="runCode()">Run</button>
+  <h3>Output:</h3>
+  <div id="threejs-output"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.js"></script>
+  <script src="codeeditor.js"></script>
+</body>
+</html>
